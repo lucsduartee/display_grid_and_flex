@@ -1,0 +1,66 @@
+/* CONFIGURAÇÕES GERAIS PARA O DOCUMENTO*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 100px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    font-weight: bold;
+}
+
+.header {
+    background: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap; /* Quando o espaço entre os itens for pequeno, o logo permanecerá sobre a 'nav' */
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens ao centro, no caso, o Logo e a 'Nav' */
+    padding: 20px;
+}
+
+.navegacao {
+    display: flex;
+}
+
+.navegacao li {
+    margin-left: 10px;
+}
+
+.navegacao li a {
+    display: block;
+    padding: 10px;
+    
+}
+
+/* CSS FLEXBOX 1 */
+/* Usando as propriedades abaixo, esse Flexbox já está responsivo
+sem ser necessário usar Media Queries */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que o elemento quebre linha */
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.flex > div {
+    flex: 1 1 200px; /* Grow Shrink Basis */
+    margin: 10px
+}
